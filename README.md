@@ -1,10 +1,9 @@
 # Cypress-ISTQB-Online-Test
 
-
-> Javascript, Cypress with Cucumber example project.
+> Javascript, Cypress with Cucumber project.
 
 ### 💻 Description
-E2e tests for https://bootcampqa.com
+E2e tests for https://joseqa81.github.io/ISTQB-online-test1/
 
 JIRA PROJECT (ACCESS REQUIRED): https://bootcampqajose.atlassian.net/jira/software/projects/IOT/boards/6
 - ## 💻 Pre-requisites
@@ -34,4 +33,4 @@ Execute node comand in a terminal: npm i
 2. See test results on Cypress Cloud: https://cloud.cypress.io/projects/et4g1x/runs
 
 ## Author:
-1. https://www.linkedin.com/in/jos%C3%A9-andr%C3%A9s-lorca-g%C3%A1lvez-10183a286/
+José Andrés Lorca Gálvez: https://www.linkedin.com/in/jos%C3%A9-andr%C3%A9s-lorca-g%C3%A1lvez-10183a286/
