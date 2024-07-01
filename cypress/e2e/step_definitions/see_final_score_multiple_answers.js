@@ -12,3 +12,16 @@ import {
     });
     
 });
+
+When("the student presses button see the final score", () => {
+    
+  cy.get('[data-cy="see-final-score"]').click();
+
+});
+
+Then("the final score should be displayed", () => {
+    
+  cy.get('[data-cy="final-score-message"]').should('be.visible');
+  cy.get('[data-cy="final-score-message"]').should('contain', 'Your final score is:');
+  
+});

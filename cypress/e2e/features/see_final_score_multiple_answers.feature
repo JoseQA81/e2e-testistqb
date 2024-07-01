@@ -15,3 +15,5 @@ When the student answers questions:
     |  8            |  B            |
     |  9            |  B            |
     |  10           |               |
+And the student presses button see the final score
+Then the final score should be displayed
