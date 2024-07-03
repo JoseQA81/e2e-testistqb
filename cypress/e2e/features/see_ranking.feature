@@ -18,7 +18,6 @@ Given the student enters the name "José Andrés"
     |  9            |  B            |
     |  10           |  B            |
 And the student presses see final score button
-And the student presses see ranking button
 
 Given the student enters the name "María Jesús"
     | questionNumber| selectedAnswer|
@@ -33,9 +32,9 @@ Given the student enters the name "María Jesús"
     |  9            |  C            |
     |  10           |  C            |
 And the student presses see final score button
-And the student presses see ranking button
 
 Given the student enters the name "Alejandro"
+When the students answer questions:
     | questionNumber| selectedAnswer|
     |  1            |               |
     |  2            |               |
@@ -53,7 +52,7 @@ And the student presses see ranking button
 Then a list should appear with all the students who have taken the exam
 And their scores ordered from highest to lowest score
 And the ranking should show:
-    | username | score |
-    | User1    | 20    |
-    | User2    |-10    |
-    | User3    | 0     |
+    | username       | score                      |
+    | José Andrés    | Your final score is: 20    |
+    | María Jesús    | Your final score is: -10   |
+    | Alejandro      | Your final score is: 0     |
