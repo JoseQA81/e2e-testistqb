@@ -29,16 +29,17 @@ When("the student presses see ranking button", () => {
   });
 
   Then("the ranking should show:", () => {
-  cy.get('[data-cy="final-score-message"]').should('contain', 'Your final score is: 20');
-    cy.get('[data-cy="final-score-message"]').should('contain', 'Your final score is: -10');
-    cy.get('[data-cy="final-score-message"]').should('contain', 'Your final score is: 0');
+  cy.get('[data-cy="ranking-result-message"]').should('contain', '20');
+    cy.get('[data-cy="ranking-result-message"]').should('contain', '-10');
+    cy.get('[data-cy="ranking-result-message"]').should('contain', '0');
         
   });
-  //Then("the ranking should show:", (datatable) => {
+  
+  /**Then("the ranking should show:", (datatable) => {
 
-    //datatable.hashes().forEach(element => {
-   // cy.get('[data-cy="question'+element.questionNumber+'"]').select(element.selectedAnswer)
+    datatable.hashes().forEach(element => {
+   cy.get('[data-cy="see-ranking-result'+element.questionNumber+'"]').select(element.selectedAnswer)
     
-   // });
+    });
     
-//});
+});*/

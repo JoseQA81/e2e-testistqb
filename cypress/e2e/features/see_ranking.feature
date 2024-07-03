@@ -6,6 +6,7 @@ Given the student is on the ISTQB exam page
 Scenario: See the score ranking
 
 Given the student enters the name "José Andrés"
+When the students answer questions:
     | questionNumber| selectedAnswer|
     |  1            |  B            |
     |  2            |  A            |
@@ -20,6 +21,7 @@ Given the student enters the name "José Andrés"
 And the student presses see final score button
 
 Given the student enters the name "María Jesús"
+When the students answer questions:
     | questionNumber| selectedAnswer|
     |  1            |  C            |
     |  2            |  B            |
@@ -52,7 +54,7 @@ And the student presses see ranking button
 Then a list should appear with all the students who have taken the exam
 And their scores ordered from highest to lowest score
 And the ranking should show:
-    | username       | score                      |
-    | José Andrés    | Your final score is: 20    |
-    | María Jesús    | Your final score is: -10   |
-    | Alejandro      | Your final score is: 0     |
+    | username       | score |
+    | José Andrés    |  20   |
+    | María Jesús    | -10   |
+    | Alejandro      |  0    |
