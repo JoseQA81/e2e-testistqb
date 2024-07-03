@@ -25,5 +25,7 @@ When("press Send & start your exam button", () => {
   }); 
 
   When("the student does not enter any name", () => {
+    // Borrar el contenido del campo de entrada para asegurarse de que esté vacío
+  cy.get('[data-cy="input-welcome-name"]').clear();
     
   });

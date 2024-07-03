@@ -17,3 +17,4 @@ When the student answers questions:
     |  10           |               |
 And the student presses button see the final score
 Then the final score should be displayed
+Then the final score is "5"
