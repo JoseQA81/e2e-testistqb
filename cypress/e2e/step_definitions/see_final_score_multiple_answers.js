@@ -26,8 +26,8 @@ Then("the final score should be displayed", () => {
   
 });
 
-Then("the final score is {string}", () => {
+Then("the final score is {string}", (score) => {
     
-  cy.get('[data-cy="final-score-message"]').should('contain', 'Your final score is: 5');
+  cy.get('[data-cy="final-score-message"]').should('contain', 'Your final score is: ' + score);
   
 });
